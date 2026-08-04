@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crepe Brasília | Cardápio Digital</title>
+<meta name="description" content="Crepe Brasília — crepes doces e salgados preparados na hora, todos os dias em uma feira diferente do DF. Confira o cardápio e a agenda semanal.">
+<meta name="theme-color" content="#5A3921">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loading-screen">
+  <div class="loader-crepe">
+    <div class="crepe-pan">
+      <div class="crepe-disc"></div>
+    </div>
+  </div>
+  <p class="loader-text">Crepe Brasília</p>
+  <span class="loader-sub">preparando algo especial...</span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-mark"><img src="img/Logo.jpg" alt=""></span>
+      <span class="logo-text">Crepe <em>Brasília</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link active">Início</a>
+      <a href="#cardapio" class="nav-link">Cardápio</a>
+      <a href="#agenda" class="nav-link">Agenda das Feiras</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#instagram" class="nav-link">Instagram</a>
+      <a href="#cardapio" class="btn btn-gold nav-cta">Ver Cardápio</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Alternar modo claro e escuro">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero-bg">
+   <video autoplay muted loop playsinline>
+    <source src="img/Sendo preparado.mp4" type="video/mp4">
+   </video>
+  </div>
+  <canvas id="particles" class="hero-particles"></canvas>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <img src="img/Logo.jpg" alt="Logo Crepe Brasília" class="hero-logo" data-aos="fade-down" data-aos-delay="100">
+    <h1 class="hero-title">
+      <span class="line">O verdadeiro sabor de</span>
+      <span class="line highlight">Brasília</span>
+      <span class="line">em cada crepe.</span>
+    </h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+      Crepes doces e salgados preparados na hora com ingredientes selecionados e muito carinho.
+    </p>
+    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+      <a href="#cardapio" class="btn btn-gold">Ver Cardápio</a>
+      <a href="#agenda" class="btn btn-outline">Onde Estamos Hoje</a>
+    </div>
+  </div>
+
+  <a href="#cardapio" class="scroll-indicator" aria-label="Rolar para baixo">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ CARDÁPIO ============ -->
+<section id="cardapio" class="menu-section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="eyebrow">Nosso cardápio</span>
+      <h2>Sabores feitos na hora, <span class="text-gold">pra você</span></h2>
+      <p>Da chapa quente direto pro seu prato — escolha entre salgados, doces e bebidas.</p>
+    </div>
+
+
+    <div class="menu-grid" id="menuGrid">
+
+      <article class="menu-card" data-category="salgado" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/5A3921/F8F0E3?text=Frango+%26+Catupiry" alt="Crepe Frango com Catupiry" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Frango com Catupiry</h3>
+          <p>Frango desfiado, milho, catupiry e queijo.</p>
+          <span class="price">R$ 24,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="salgado" data-aos="fade-up" data-aos-delay="80">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/5A3921/F8F0E3?text=Carne+Seca+Especial" alt="Crepe Carne Seca Especial" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Carne Seca Especial</h3>
+          <p>Carne seca desfiada, queijo e requeijão.</p>
+          <span class="price">R$ 27,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="salgado" data-aos="fade-up" data-aos-delay="160">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/5A3921/F8F0E3?text=Presunto+%26+Queijo" alt="Crepe Presunto e Queijo" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Presunto e Queijo</h3>
+          <p>Presunto fatiado, queijo derretido e orégano.</p>
+          <span class="price">R$ 20,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Chocolate+%26+Morango" alt="Crepe Chocolate com Morango" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Alvorada</h3>
+          <p>Banana com canela + Banana.</p>
+          <span class="price">R$ 21,90</span>
+        </div>
+      </article>
+
+      
+      <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Lago+Sul" alt="Lago Sul" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Lago Sul</h3>
+          <p>Nutela + Muçarela + Morango.</p>
+          <span class="price">R$ 22,90</span>
+        </div>
+      </article>
+
+      
+      <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Chocolate+%26+Morango" alt="Crepe Chocolate com Morango" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Lago Norte</h3>
+          <p>Nutela + Muçarela + Banana.</p>
+          <span class="price">R$ 22,90</span>
+        </div>
+      </article>
+
+      
+      <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Chocolate+%26+Morango" alt="Crepe Chocolate com Morango" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Palácio</h3>
+          <p>Nutela + Muçarela + Morango + Uva</p>
+          <span class="price">R$ 22,00</span>
+        </div>
+      </article>
+
+       <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Chocolate+%26+Morango" alt="Crepe Chocolate com Morango" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Palácio</h3>
+          <p>Nutela + Muçarela + Morango + Uva</p>
+          <span class="price">R$ 22,00</span>
+        </div>
+      </article>
+
+       <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Chocolate+%26+Morango" alt="Crepe Chocolate com Morango" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Palácio</h3>
+          <p>Nutela + Muçarela + Morango + Uva</p>
+          <span class="price">R$ 22,00</span>
+        </div>
+      </article>
+
+       <article class="menu-card" data-category="doce" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Chocolate+%26+Morango" alt="Crepe Chocolate com Morango" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Palácio</h3>
+          <p>Nutela + Muçarela + Morango + Uva</p>
+          <span class="price">R$ 22,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="doce" data-aos="fade-up" data-aos-delay="80">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Romeu+%26+Julieta" alt="Crepe Romeu e Julieta" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Romeu e Julieta</h3>
+          <p>Queijo com goiabada cremosa.</p>
+          <span class="price">R$ 19,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="doce" data-aos="fade-up" data-aos-delay="160">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/8A2E2E/F8F0E3?text=Doce+de+Leite" alt="Crepe Doce de Leite com Nozes" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Crepe Doce de Leite com Nozes</h3>
+          <p>Doce de leite cremoso, nozes crocantes e raspas de chocolate.</p>
+          <span class="price">R$ 23,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="bebida" data-aos="fade-up">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/C89A3D/5A3921?text=Suco+Natural" alt="Suco Natural" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Suco Natural da Fruta</h3>
+          <p>Escolha entre maracujá, morango ou abacaxi com hortelã.</p>
+          <span class="price">R$ 10,00</span>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="bebida" data-aos="fade-up" data-aos-delay="80">
+        <div class="menu-card-img">
+          <img src="https://placehold.co/500x400/C89A3D/5A3921?text=Refrigerante" alt="Refrigerante lata" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Refrigerante Lata</h3>
+          <p>Diversos sabores geladinhos.</p>
+          <span class="price">R$ 7,00</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENDA DAS FEIRAS ============ -->
+<section id="agenda" class="agenda-section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="eyebrow">Agenda semanal</span>
+      <h2>Onde estaremos <span class="text-gold">essa semana</span></h2>
+      <p>📍 Estamos em uma feira diferente todos os dias! Consulte nossa agenda semanal e venha experimentar nossos crepes preparados na hora.</p>
+    </div>
+
+    <div class="agenda-layout">
+
+      <div class="agenda-cards" id="agendaCards">
+
+        <div class="agenda-card" data-day="1" data-map="Feira Luz, QD 09, Jardins Mangueiral, Brasília" data-aos="fade-up">
+          <span class="today-badge">Hoje</span>
+          <div class="agenda-card-top">
+            <span class="agenda-day">Segunda-feira</span>
+            <span class="agenda-time"><i class="fa-regular fa-clock"></i> 16:00 às 22:00</span>
+          </div>
+          <h3><i class="fa-solid fa-location-dot"></i> Feira Luz</h3>
+          <p class="agenda-address">QD 09, Jardins Mangueiral<br>(Ao lado da Pão Dourado)</p>
+          <a href="#" class="btn btn-map" data-map-link="">Ver no Google Maps</a>
+        </div>
+
+        <div class="agenda-card" data-day="2" data-map="Feira Luz, Setor Central, Gama, Brasília" data-aos="fade-up" data-aos-delay="60">
+          <span class="today-badge">Hoje</span>
+          <div class="agenda-card-top">
+            <span class="agenda-day">Terça-feira</span>
+            <span class="agenda-time"><i class="fa-regular fa-clock"></i> 16:00 às 22:00</span>
+          </div>
+          <h3><i class="fa-solid fa-location-dot"></i> Feira Luz</h3>
+          <p class="agenda-address">Setor Central (Ao lado da Rodoviária do Gama)<br>(Em frente ao Potiguar)</p>
+          <a href="#" class="btn btn-map" data-map-link="">Ver no Google Maps</a>
+        </div>
+
+        <div class="agenda-card" data-day="3" data-map="Sabores da Noite Gastronomia, QNL 1, Taguatinga, Brasília" data-aos="fade-up" data-aos-delay="120">
+          <span class="today-badge">Hoje</span>
+          <div class="agenda-card-top">
+            <span class="agenda-day">Quarta-feira</span>
+            <span class="agenda-time"><i class="fa-regular fa-clock"></i> 16:00 às 22:00</span>
+          </div>
+          <h3><i class="fa-solid fa-location-dot"></i> Sabores da Noite Gastronomia</h3>
+          <p class="agenda-address">QNL 1, Taguatinga<br>(Próximo ao Atacadão)</p>
+          <a href="#" class="btn btn-map" data-map-link="">Ver no Google Maps</a>
+        </div>
+
+        <div class="agenda-card" data-day="4" data-map="Sabores da Noite Gastronomia, Jardins Mangueiral, Brasília" data-aos="fade-up">
+          <span class="today-badge">Hoje</span>
+          <div class="agenda-card-top">
+            <span class="agenda-day">Quinta-feira</span>
+            <span class="agenda-time"><i class="fa-regular fa-clock"></i> 16:00 às 22:00</span>
+          </div>
+          <h3><i class="fa-solid fa-location-dot"></i> Sabores da Noite Gastronomia</h3>
+          <p class="agenda-address">Jardins Mangueiral<br>Estacionamento ao lado da Quadra 02</p>
+          <a href="#" class="btn btn-map" data-map-link="">Ver no Google Maps</a>
+        </div>
+
+        <div class="agenda-card" data-day="5" data-map="Feira Livre Noturna de Brasília, Vicente Pires, Brasília" data-aos="fade-up" data-aos-delay="60">
+          <span class="today-badge">Hoje</span>
+          <div class="agenda-card-top">
+            <span class="agenda-day">Sexta-feira</span>
+            <span class="agenda-time"><i class="fa-regular fa-clock"></i> 16:00 às 22:00</span>
+          </div>
+          <h3><i class="fa-solid fa-location-dot"></i> Feira Livre Noturna de Brasília</h3>
+          <p class="agenda-address">Vicente Pires<br>Em frente ao Castelo Forte</p>
+          <a href="#" class="btn btn-map" data-map-link="">Ver no Google Maps</a>
+        </div>
+
+        <div class="agenda-card" data-day="6" data-map="Vila Gastronomica Noturna, CL 213, Santa Maria, Brasília" data-aos="fade-up" data-aos-delay="120">
+          <span class="today-badge">Hoje</span>
+          <div class="agenda-card-top">
+            <span class="agenda-day">Sábado</span>
+            <span class="agenda-time"><i class="fa-regular fa-clock"></i> 16:00 às 22:00</span>
+          </div>
+          <h3><i class="fa-solid fa-location-dot"></i> Vila Gastronômica Noturna</h3>
+          <p class="agenda-address">Santa Maria, CL 213<br>Na área verde</p>
+          <a href="#" class="btn btn-map" data-map-link="">Ver no Google Maps</a>
+        </div>
+
+        <div class="agenda-card agenda-card-off" data-day="0" data-aos="fade-up">
+          <div class="agenda-card-top">
+            <span class="agenda-day">Domingo</span>
+          </div>
+          <h3><i class="fa-solid fa-mug-hot"></i> Dia de descanso</h3>
+          <p class="agenda-address">Sem feira hoje — nos vemos na segunda-feira!</p>
+        </div>
+
+      </div>
+
+      <div class="agenda-map" data-aos="fade-left">
+        <div class="map-frame">
+          <iframe id="mapFrame"
+            src="https://www.google.com/maps?q=Feira+Luz,+Jardins+Mangueiral,+Brasília&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Localização da feira selecionada">
+          </iframe>
+        </div>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-gold btn-directions">
+          <i class="fa-solid fa-diamond-turn-right"></i> Como Chegar
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="about-section">
+  <div class="container about-grid">
+    <div class="about-image" data-aos="fade-right">
+      <img src="https://placehold.co/700x800/5A3921/F8F0E3?text=Equipe+Crepe+Brasília" alt="Equipe Crepe Brasília preparando crepes" loading="lazy">
+      <div class="about-badge">
+        <i class="fa-solid fa-heart"></i>
+        <span>Feito com carinho, todos os dias</span>
+      </div>
+    </div>
+    <div class="about-content" data-aos="fade-left">
+      <span class="eyebrow">Quem somos</span>
+      <h2>Uma paixão que virou <span class="text-gold">tradição</span> nas feiras do DF</h2>
+      <p>A Crepe Brasília nasceu com o propósito de levar um sabor único para cada feira do Distrito Federal. Trabalhamos com ingredientes selecionados, preparo na hora e muito carinho em cada crepe servido, proporcionando uma experiência gastronômica diferenciada para nossos clientes.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <strong>6</strong>
+          <span>feiras por semana</span>
+        </div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span>feito na hora</span>
+        </div>
+        <div class="stat">
+          <strong>+10</strong>
+          <span>sabores no cardápio</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section id="instagram" class="instagram-section">
+  <div class="container">
+    <div class="insta-profile" data-aos="fade-up">
+      <img src="https://placehold.co/160x160/C89A3D/5A3921?text=CB" alt="Foto de perfil @crepesbrasilia" class="insta-avatar">
+      <div class="insta-info">
+        <h3>@crepesbrasilia</h3>
+        <div class="insta-stats">
+          <div><strong id="followerCount">4.2k</strong><span>seguidores</span></div>
+          <div><strong id="postCount">186</strong><span>publicações</span></div>
+        </div>
+        <a href="https://instagram.com/crepesbrasilia" target="_blank" rel="noopener" class="btn btn-gold">
+          <i class="fa-brands fa-instagram"></i> Seguir no Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="insta-grid" id="instaGrid" data-aos="fade-up" data-aos-delay="100">
+      <a href="#" class="insta-post"><img src="https://placehold.co/400x400/5A3921/F8F0E3?text=%40crepesbrasilia" alt="Publicação Instagram"><span class="insta-overlay"><i class="fa-solid fa-heart"></i></span></a>
+      <a href="#" class="insta-post"><img src="https://placehold.co/400x400/8A2E2E/F8F0E3?text=%40crepesbrasilia" alt="Publicação Instagram"><span class="insta-overlay"><i class="fa-solid fa-heart"></i></span></a>
+      <a href="#" class="insta-post"><img src="https://placehold.co/400x400/C89A3D/5A3921?text=%40crepesbrasilia" alt="Publicação Instagram"><span class="insta-overlay"><i class="fa-solid fa-heart"></i></span></a>
+      <a href="#" class="insta-post"><img src="https://placehold.co/400x400/5A3921/F8F0E3?text=%40crepesbrasilia" alt="Publicação Instagram"><span class="insta-overlay"><i class="fa-solid fa-heart"></i></span></a>
+      <a href="#" class="insta-post"><img src="https://placehold.co/400x400/8A2E2E/F8F0E3?text=%40crepesbrasilia" alt="Publicação Instagram"><span class="insta-overlay"><i class="fa-solid fa-heart"></i></span></a>
+      <a href="#" class="insta-post"><img src="https://placehold.co/400x400/C89A3D/5A3921?text=%40crepesbrasilia" alt="Publicação Instagram"><span class="insta-overlay"><i class="fa-solid fa-heart"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">CB</span>
+        <span class="logo-text">Crepe <em>Brasília</em></span>
+      </a>
+      <p>O verdadeiro sabor de Brasília em cada crepe, servido com carinho em uma feira diferente todos os dias.</p>
+      <div class="footer-socials">
+        <a href="https://wa.me/5561999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/crepesbrasilia" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <p><i class="fa-brands fa-whatsapp"></i> (61) 99999-9999</p>
+      <p><i class="fa-solid fa-envelope"></i> contato@crepebrasilia.com.br</p>
+      <p><i class="fa-solid fa-location-dot"></i> Brasília – DF</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horário de funcionamento</h4>
+      <p>Segunda a Sábado</p>
+      <p>16:00 às 22:00</p>
+      <p>Domingo: fechado</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#agenda">Agenda das Feiras</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#instagram">Instagram</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Crepe Brasília. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

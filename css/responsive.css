@@ -1,0 +1,79 @@
+/* =========================================================
+   CREPE BRASÍLIA — responsive.css
+   Breakpoints: >1024 desktop | 768–1024 tablet | <768 mobile
+========================================================= */
+
+/* ============ TABLET ============ */
+@media (max-width: 1024px){
+  .about-grid{ grid-template-columns:1fr; gap:40px; }
+  .about-image{ max-width:480px; margin:0 auto; }
+
+  .agenda-layout{ grid-template-columns:1fr; }
+  .agenda-map{ position:static; order:-1; }
+  .map-frame{ aspect-ratio: 16/9; }
+
+  .insta-grid{ grid-template-columns: repeat(4,1fr); }
+
+  .footer-grid{ grid-template-columns: 1fr 1fr; }
+}
+
+/* ============ MOBILE NAV ============ */
+@media (max-width: 900px){
+  .hamburger{ display:flex; }
+
+  .nav-links{
+    position:fixed; top:0; right:-100%;
+    width:min(320px, 80vw); height:100vh;
+    background: var(--surface-solid);
+    backdrop-filter: var(--blur);
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:28px;
+    padding:40px;
+    box-shadow: var(--shadow-strong);
+    transition: right var(--transition);
+    z-index:1001;
+  }
+  .nav-links.open{ right:0; }
+  .nav-links .nav-link,
+  .navbar:not(.scrolled) .nav-links.open .nav-link{ color:var(--text) !important; font-size:1.1rem; }
+  .nav-cta{ margin-top:10px; }
+
+  .hamburger.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2){ opacity:0; }
+  .hamburger.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+}
+
+/* ============ SMARTPHONE ============ */
+@media (max-width: 640px){
+  .container{ padding:0 18px; }
+
+  .navbar-inner{ padding:0 18px; }
+  .logo-text{ font-size:1rem; }
+
+  .hero{ min-height:560px; }
+  .hero-title{ font-size: clamp(1.9rem, 8vw, 2.6rem); }
+  .hero-subtitle{ font-size:1rem; }
+  .hero-buttons{ flex-direction:column; width:100%; }
+  .hero-buttons .btn{ width:100%; justify-content:center; }
+
+  .menu-section, .agenda-section, .about-section, .instagram-section{ padding:80px 0; }
+
+  .menu-filters{ justify-content:flex-start; overflow-x:auto; flex-wrap:nowrap; padding-bottom:6px; }
+  .menu-filters::-webkit-scrollbar{ display:none; }
+  .filter-btn{ flex-shrink:0; }
+
+  .menu-grid{ grid-template-columns:1fr; }
+
+  .agenda-cards{ grid-template-columns:1fr; }
+  .today-badge{ right:16px; }
+
+  .insta-grid{ grid-template-columns: repeat(3,1fr); gap:10px; }
+  .insta-profile{ flex-direction:column; text-align:center; }
+  .insta-stats{ justify-content:center; }
+
+  .footer-grid{ grid-template-columns:1fr; gap:32px; text-align:left; }
+
+  .back-to-top{ width:42px; height:42px; bottom:18px; right:18px; }
+}
